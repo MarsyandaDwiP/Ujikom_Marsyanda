@@ -1,0 +1,17 @@
+ cara untuk mengetahui proses pembuatan Mars Laundry
+1. Masuk ke dalam xampp yaitu phpmyadmin lalu inpor data marslaundry.sql pada forder Ujikom Marsyanda Dwi Putri 2021\Aplikasi Ujikom Marsyanda\Aplikasi Ujikom Marsyanda\marslaundry.sql 
+2. kemudian bukan Netbeans lalu buka file\Open Project\Ujikom Marsyanda Dwi Putri 2021\Aplikasi Ujikom Marsyanda\Mars Laundry Setelah itu klik OK
+3. Maka akan muncul Source code pada Netbeans
+
+
+Username dan Password
+1. Admin = "admin"
+           "12345678"
+
+2. Kasir = "kasir"
+           "87654321"
+
+3. Owner = "Owner"
+           "332211"
+
+ 

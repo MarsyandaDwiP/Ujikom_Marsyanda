@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e78bc1c1-68f1-4758-9c19-ffe1fd72f484">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     member.`id_member` AS member_id,
+     member.`nama_member` AS member_nama,
+     member.`alamat` AS member_alamat,
+     member.`jenis_kelamin` AS member_jenis_kelamin,
+     member.`tlp` AS member_tlp
+FROM
+     `member` member]]>
+	</queryString>
+	<field name="member_id" class="java.lang.String"/>
+	<field name="member_nama" class="java.lang.String"/>
+	<field name="member_alamat" class="java.lang.String"/>
+	<field name="member_jenis_kelamin" class="java.lang.String"/>
+	<field name="member_tlp" class="java.lang.String"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="126">
+			<frame>
+				<reportElement uuid="12277083-eaa5-4240-9007-c0e9f9593448" mode="Opaque" x="-20" y="-20" width="595" height="146" backcolor="#006699"/>
+				<staticText>
+					<reportElement uuid="5aa920c1-7bde-4d3f-a743-08a9f9c77f87" x="142" y="55" width="433" height="43" forecolor="#FFFFFF"/>
+					<textElement>
+						<font size="30" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Laporan Mars Laundry Store]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="a3a0b271-af0a-443c-b5c2-db4e994e0622" x="464" y="116" width="111" height="20" forecolor="#FFFFFF"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[DATA MEMBER]]></text>
+				</staticText>
+				<image>
+					<reportElement uuid="435a3dcd-8f72-4347-9532-b32698cbd6be" x="20" y="20" width="127" height="109"/>
+					<imageExpression><![CDATA["C:\\Users\\Windows Marsyanda 10\\Desktop\\icon laundry\\mm.jpg"]]></imageExpression>
+				</image>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement uuid="168a7758-b1f8-40db-b653-40c1af9417d0" x="-20" y="20" width="595" height="1" forecolor="#666666"/>
+			</line>
+			<staticText>
+				<reportElement uuid="19a00f2e-9a99-4f95-9abf-8f82e9a655c6" mode="Opaque" x="0" y="0" width="111" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID Member]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a5d7cf24-f09c-4ada-b968-aee35e2db4ce" mode="Opaque" x="111" y="0" width="111" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Member]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6750752e-edf1-4b86-ad9f-9571c55aeb75" mode="Opaque" x="222" y="0" width="111" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Alamat Member]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="aa707ce7-b7e7-476a-8996-599b6f27ba19" mode="Opaque" x="333" y="0" width="111" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1a33e0a3-9e9c-402b-a030-e302e3083507" mode="Opaque" x="444" y="0" width="111" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telepon]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement uuid="588bca59-e263-42ec-98f9-6537acc0913b" positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="f26eb2aa-71f5-4374-9c69-8e33d91d930e" x="0" y="0" width="111" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{member_id}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="213821d5-4734-4c29-afea-65f123465d54" x="111" y="0" width="111" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{member_nama}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="78b2d5f6-dee8-4f78-b171-5f64428a6ee9" x="222" y="0" width="111" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{member_alamat}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="abbe66b7-483b-4b5e-a1b6-4381a91cb10e" x="333" y="0" width="111" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{member_jenis_kelamin}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="6f8c54ea-1167-4f43-9aa4-7fcc288637af" x="444" y="0" width="111" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{member_tlp}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement uuid="e9598c7c-165b-4ebd-a4a5-9d65adabe481" mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="7e91146a-2a10-4a67-be26-0be2cfde77a9" mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="66d6a0e0-fb5a-4a9b-9d0a-387c229c40c4" x="0" y="4" width="100" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
